@@ -36,6 +36,10 @@ app.use(cors({
 }));
 app.use(bodyParser.urlencoded({ extended : true}))
 
+app.get("/", (req, res) => {
+  res.send("This is Khatreez Server.")
+})
+
 app.get("/data/blogdisplay/:limit", async (req, res) => {
   const limit = parseInt(req.params.limit, 10);
   try {
