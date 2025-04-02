@@ -9,7 +9,7 @@ const FirstComponent = (props) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:3000/data/blogmain");
+        const response = await axios.get("https://khatreez.vercel.app/data/blogmain");
         const data = response.data; 
         setResult(data[0]); 
       } catch (err) {

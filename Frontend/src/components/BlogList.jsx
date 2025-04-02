@@ -9,7 +9,7 @@ const BlogList = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:3000/data/blogcomponent");
+        const response = await axios.get("https://khatreez.vercel.app/data/blogcomponent");
         const data = response.data;
         setresult(data);
       } catch (err) {

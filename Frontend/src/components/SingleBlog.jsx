@@ -12,7 +12,7 @@ const SingleBlog = () => {
     useEffect(() => {
         async function fetchData() {
           try {
-            const response = await axios.get(`http://localhost:3000/data/article/${id}`);
+            const response = await axios.get(`https://khatreez.vercel.app/data/article/${id}`);
             const data = response.data;
             setResult(data[0]);
           } catch (err) {

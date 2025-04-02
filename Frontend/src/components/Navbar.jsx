@@ -71,7 +71,7 @@ const Navbar = () => {
     async function fetchData() {
       if (searchValue !== "") {
         try {
-          const response = await axios.get(`http://localhost:3000/search/article/${encodeURIComponent(searchValue)}`);
+          const response = await axios.get(`https://khatreez.vercel.app/search/article/${encodeURIComponent(searchValue)}`);
           const result = response.data;
           setResult(result);
         } catch (err) {
