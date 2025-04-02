@@ -8,7 +8,7 @@ env.config();
 const app = express();
 const port = process.env.PORT || 4000;
 
-const db = new pg.Client({
+const db = new pg.Pool({
   user: process.env.DATABASE_USER,
   host: process.env.DATABASE_HOST,
   database: process.env.DATABASE_DATABASE,
@@ -23,7 +23,7 @@ db.connect()
 
 const corsOptions = {
   origin: [
-    'https://khatreez-9boz-pink.vercel.app',
+    'https://khatreez-server.vercel.app',
     'https://khatreez-*.vercel.app',
     'https://khatreez.vercel.app',
     'http://localhost:3000' 
