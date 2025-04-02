@@ -18,6 +18,22 @@ const db = new pg.Client({
 
 db.connect();
 app.use(cors());
+// Enable for specific frontend URL
+app.use(cors({
+  origin: 'https://khatreez-9boz-pink.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true // if using cookies/auth
+}));
+
+// Or enable for all Vercel preview URLs
+app.use(cors({
+  origin: [
+    'https://khatreez-9boz-pink.vercel.app',
+    'https://khatreez-*.vercel.app', // wildcard for all preview URLs
+    'https://khatreez.vercel.app' // your production URL
+  ],
+  credentials: true
+}));
 app.use(bodyParser.urlencoded({ extended : true}))
 
 app.get("/data/blogdisplay/:limit", async (req, res) => {
