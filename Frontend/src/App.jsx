@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import FirstComponent from "./components/FirstComponent"
-import Interval from './components/interval'
+import Interval from './components/Interval'
 import BlogList from './components/BlogList'
 import CategoriesComponent from './components/CategoriesComponent'
 import Footer from './components/Footer'
