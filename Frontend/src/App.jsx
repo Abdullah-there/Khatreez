@@ -1,15 +1,15 @@
 import './App.css'
-import Navbar from './Components/Navbar'
+import Navbar from './components/Navbar'
 import FirstComponent from "./components/FirstComponent"
-import Interval from './Components/interval'
-import BlogList from './Components/BlogList'
-import CategoriesComponent from './Components/CategoriesComponent'
-import Footer from './Components/Footer'
+import Interval from './components/interval'
+import BlogList from './components/BlogList'
+import CategoriesComponent from './components/CategoriesComponent'
+import Footer from './components/Footer'
 import { Routes, Route } from 'react-router-dom';
-import BlogDisplay from './Components/BlogDisplay'
-import SingleBlog from './Components/SingleBlog'
-import ArticlesStatus from './Components/ArticlesStatus'
-import Contact from './Components/Contact'
+import BlogDisplay from './components/BlogDisplay'
+import SingleBlog from './components/SingleBlog'
+import ArticlesStatus from './components/ArticlesStatus'
+import Contact from './components/Contact'
 
 function App() {
   return (
