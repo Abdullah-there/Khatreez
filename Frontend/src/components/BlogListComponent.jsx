@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const BlogListComponent = (props) => {
   return (
-            <div>
-              <NavLink to={`/articles/${props.id}`} className='podcast-card'>
+        <NavLink to={`/articles/${props.id}`} className='podcast-card'>
               <div className='card-img'>
                 <img src={props.src} alt="Title" />
               </div>
@@ -14,8 +13,7 @@ const BlogListComponent = (props) => {
                   <p>{props.text.substring(0,15)} ...</p>
                   <p>Date : {props.date}</p>
                 </div>
-                </NavLink>
-            </div>
+        </NavLink>
 )
 }
 

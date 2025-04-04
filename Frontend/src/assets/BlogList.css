@@ -118,7 +118,7 @@
     .podcast-card  {
         display: flex;
         flex-direction: row-reverse;
-        width: 100%;
+        width: 98%;
     }
     .card-img {
         width: 40vw;
@@ -129,15 +129,11 @@
         width: 50vw;
         height: auto;
     }
-    .learn-more-button {
-        font-size: 10px;
-        padding: 2px 4px;
-    }
     .podcast-card div h2{
-        font-size: 15px;
+        font-size: 20px;
     }
     .podcast-card div p{
-        font-size: 12px;
+        font-size: 17px;
     }
     .sub-component-h1 {
         left: 20px;
@@ -157,16 +153,12 @@
         font-size: x-large;
     }
     .podcast-card div h2{
-        font-size: 14px;
+        font-size: 20px;
         margin: 0px;
     }
     .podcast-card div p{
-        font-size: 12px;
+        font-size: 18px;
         margin: 0px;
-    }
-    .learn-more-button {
-        font-size: 8px;
-        padding: 0 2px;
     }
 }
 
@@ -175,14 +167,10 @@
         font-size: large;
     }
     .podcast-card div h2{
-        font-size: 10px;
+        font-size: 15px;
     }
     .podcast-card div p{
-        font-size: 8px;
-    }
-    .learn-more-button {
-        font-size: 8px;
-        padding: 0 1px;
+        font-size: 13px;
     }
     .podcast-card {
         padding-bottom: 3px;
