@@ -84,6 +84,18 @@
     }
 }
 
+@media (max-width: 650px) {
+    .left {
+        height: 38vh;
+    }
+    .right img {
+        height: 38vh;
+    }
+    .main-1 {
+        height: 40vh;
+    }
+}
+
 @media (max-width: 580px) {
     .left h1 {
         font-size: medium;

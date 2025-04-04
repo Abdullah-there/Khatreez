@@ -43,6 +43,7 @@ const Navbar = () => {
     }
   };
   function handleClicked() {
+    const searchInp = document.getElementById("search-input");
     const mainNav = document.getElementById('navbar')
     const navbar = document.getElementById('main-nav');
     const navItems = document.getElementById('nav-ul');
@@ -59,6 +60,9 @@ const Navbar = () => {
     if (mainNav.classList.contains('navbar-display')) {
       mainNav.classList.remove('navbar-display');
       mainNav.classList.add('navbar-display-sec');
+    }
+    if (searchInp.style.display == "none") {
+      searchInp.style.display = "flex";
     }
   }
 
