@@ -1,4 +1,6 @@
 .p-loading {
   font-size: xx-large;
-  color: rgb(170, 166, 166);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 10px;
 }
