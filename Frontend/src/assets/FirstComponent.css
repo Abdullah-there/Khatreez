@@ -85,6 +85,9 @@
 }
 
 @media (max-width: 650px) {
+    .left h1 {
+        padding-top: 10px;
+    }
     .left {
         height: 38vh;
     }
@@ -96,10 +99,24 @@
     }
 }
 
+@media (max-width: 600px) {
+    .left h1 {
+        padding-top: 8px;
+    }
+    .left {
+        height: 28vh;
+    }
+    .right img {
+        height: 28vh;
+    }
+    .main-1 {
+        height: 30vh;
+    }
+}
+
 @media (max-width: 580px) {
     .left h1 {
-        font-size: medium;
-        padding-top: 10px;
+        padding-top: 6px;
     }
     .left p {
         font-size: smaller;
@@ -108,7 +125,7 @@
 
 @media (max-width: 400px) {
     .left h1 {
-        font-size: small;
+        font-size: medium;
         padding-top: 7px;
     }
     .left p {

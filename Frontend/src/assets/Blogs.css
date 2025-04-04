@@ -64,7 +64,7 @@
     }
     
     .div-p {
-        font-size: small;
+        font-size: medium;
     }
 }
 
@@ -72,17 +72,13 @@
     .blog-element img {
         height: 130px;
     }
-
-    .blog-element-div h1 {
-        font-size: larger;
-    }
     
     .div-p {
-        font-size: small;
+        font-size: medium;
     }
     
     .div-date {
-        font-size: smaller;
+        font-size: medium;
     }
 }
 
@@ -93,32 +89,32 @@
     }
 
     .blog-element-div h1 {
-        font-size: small;
+        font-size: medium;
 
     }
     
     .div-p {
-        font-size: 10px;
+        font-size: small;
     }
 }
 
 @media (max-width:470px) {
     .blog-element-div h1 {
-        font-size: smaller;
+        font-size: medium;
 
     }
     
     .div-p {
-        font-size: 8px;
+        font-size: small;
     }
 }
 
 @media (max-width:380px) {
     .blog-element-div h1 {
-        font-size: 12px;
+        font-size: medium;
 
     }
     .div-p {
-        font-size: 6px;
+        font-size: smaller;
     }
 }

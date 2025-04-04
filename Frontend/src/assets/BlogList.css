@@ -118,7 +118,7 @@
     .podcast-card  {
         display: flex;
         flex-direction: row-reverse;
-        width: 98%;
+        width: 90%;
     }
     .card-img {
         width: 40vw;

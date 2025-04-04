@@ -9,8 +9,8 @@ const BlogListComponent = (props) => {
                 <img src={props.src} alt="Title" />
               </div>
                 <div className='card-info'>
-                  <h2>{props.title.substring(0,20)} ...</h2>
-                  <p>{props.text.substring(0,15)} ...</p>
+                  <h2>{props.title.substring(0,40)} ...</h2>
+                  <p>{props.text.substring(0,30)} ...</p>
                   <p>Date : {props.date}</p>
                 </div>
         </NavLink>
