@@ -6,14 +6,13 @@
   "author": "",
   "type": "module",
   "main": "admin.js",
-
   "scripts": {
     "start": "node admin.js",
     "dev": "nodemon admin.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
