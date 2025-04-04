@@ -5,8 +5,11 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "index.js",
+  "main": "admin.js",
+
   "scripts": {
+    "start": "node admin.js",
+    "dev": "nodemon admin.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
