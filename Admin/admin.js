@@ -169,4 +169,15 @@ passport.deserializeUser((user, cb) => {
     cb(null, user);
 });
 
+app.use((req, res) => {
+  res.status(404).json({ error: "Not Found" });
+});
+
+app.use((err, req, res, next) => {
+  console.error("Server error:", err);
+  res.status(500).json({ error: "Internal Server Error" });
+});
+
 app.listen(port, () => console.log(`App listening on Port ${port}`))
+
+export default app;
