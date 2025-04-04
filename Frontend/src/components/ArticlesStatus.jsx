@@ -13,7 +13,7 @@ const ArticlesStatus = () => {
     useEffect(() => {
       async function fetchData() {
         try {
-          const response = await axios.get(`https://khatreez.vercel.app/articles/filter/${encodeURIComponent(type)}/${limit}`);
+          const response = await axios.get(`https://khatreezserver.vercel.app/articles/filter/${encodeURIComponent(type)}/${limit}`);
           const data = response.data;
           setResult(data);
         } catch (err) {
