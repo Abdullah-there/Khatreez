@@ -9,13 +9,14 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 const db = new pg.Pool({
-  user: process.env.DATABASE_USER,
-  host: process.env.DATABASE_HOST,
-  database: process.env.DATABASE_DATABASE,
-  password: String(process.env.DATABASE_PASSWORD),
-  port: Number(process.env.DATABASE_PORT),
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: String(process.env.PGPASSWORD),
+  port: process.env.PGPORT,
+  ssl: { rejectUnauthorized: false }
 });
+
 
 db.connect()
   // .then(() => console.log("Connected to database"))

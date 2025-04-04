@@ -9,18 +9,19 @@ import session from "express-session";
 import env from "dotenv";
 
 const app = express();
-const port = 5000;
 const saltRounds = 10;
 env.config();
 
-const db = new pg.Client({
-  user: process.env.DATABASE_USER,
-  host: process.env.DATABASE_HOST,
-  database: process.env.DATABASE_DATABASE,
-  password: process.env.DATABASE_PASSWORD,
-  port: process.env.DATABASE_PORT
-})
- 
+const port = process.env.PORT || 5000;
+
+const db = new pg.Pool({
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: String(process.env.PGPASSWORD),
+  port: process.env.PGPORT,
+  ssl: { rejectUnauthorized: false }
+});
 
 app.use(
     session({
