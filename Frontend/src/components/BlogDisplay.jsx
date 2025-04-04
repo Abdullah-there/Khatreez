@@ -26,7 +26,7 @@ const BlogDisplay = () => {
 
   return (
     <div className="blog-container">
-      {result && result.map((article) => {
+      {result ? result.map((article) => {
         return (
           <BlogSubDisplay
             key={article.id}
@@ -38,7 +38,7 @@ const BlogDisplay = () => {
             date={article.datetime}
           />
         );
-      })}
+      }): <p className='p-loading'>Loading...</p>}
       <button className="read-more-btn" onClick={requestData}>Read More</button>
     </div>
   );

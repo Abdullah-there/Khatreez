@@ -22,7 +22,7 @@ const BlogList = () => {
     <div className='podcast-section'>
       <h1 className='section-h1'>The Articles across The world</h1>
         <div className="podcast-container">
-        {result && result.map((article) => {
+        {result ? result.map((article) => {
         return (
           <BlogListComponent
             key={article.id}
@@ -34,7 +34,7 @@ const BlogList = () => {
             date={article.datetime}
           />
         );
-      })}
+      }): <p className='p-loading'>Loading...</p>}
       </div>
     </div>
   )

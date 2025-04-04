@@ -12,7 +12,7 @@ const SingleBlog = () => {
     useEffect(() => {
         async function fetchData() {
           try {
-            const response = await axios.get(`https://khatreez.vercel.app/data/article/${id}`);
+            const response = await axios.get(`https://khatreezserver.vercel.app/data/article/${id}`);
             const data = response.data;
             setResult(data[0]);
           } catch (err) {
@@ -33,7 +33,7 @@ const SingleBlog = () => {
                 <NavLink to="/articles" className="read-more"><p>Read More Articles</p></NavLink>
             </div>
         ) : (
-            <p className='loading-p'>Loading ...</p>
+            <p className='p-loading'>Loading ...</p>
         )}
         
     </div>

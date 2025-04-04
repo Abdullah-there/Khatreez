@@ -20,7 +20,7 @@ const FirstComponent = (props) => {
   }, []);
 
   return (
-    result && (
+    result ? (
         <NavLink to={`/articles/${result.id}`} className="custom-link">
             <div className="main-1 flex">
                 <div className="left">
@@ -36,7 +36,7 @@ const FirstComponent = (props) => {
                 </div>
             </div>
         </NavLink>
-    )
+    ) : <p className='p-loading'>Loading...</p>
 );
 };
 
