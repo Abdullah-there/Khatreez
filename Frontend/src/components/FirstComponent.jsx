@@ -9,6 +9,7 @@ const FirstComponent = (props) => {
   useEffect(() => {
     async function fetchData() {
       try {
+        console.log("used")
         const response = await axios.get("https://khatreezserver.vercel.app/data/blogmain");
         const data = response.data; 
         setResult(data[0]); 

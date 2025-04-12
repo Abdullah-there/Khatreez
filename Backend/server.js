@@ -27,7 +27,8 @@ const corsOptions = {
     'https://khatreez-server.vercel.app',
     'https://khatreez-*.vercel.app',
     'https://khatreez.vercel.app',
-    'http://localhost:3000' 
+    'http://localhost:3000',
+    'http://localhost:5173'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
