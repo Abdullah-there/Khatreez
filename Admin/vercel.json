@@ -1,8 +1,9 @@
 {
-    "version": 2,
-    "builds": [{ "src": "admin.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/(.*)", "dest": "admin.js" }],
-    "env": {
-      "NODE_VERSION": "18"
-    }
-  }
+  "version": 2,
+  "builds": [
+    { "src": "api/admin.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/admin.js" }
+  ]
+}
