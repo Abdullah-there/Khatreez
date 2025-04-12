@@ -14,7 +14,6 @@ function FirstComponent() {
     async function fetchData() {
       if (!dataFetched.current) {
         try {
-          console.log("Fetching data...");
           const response = await axios.get(
             "https://khatreezserver.vercel.app/data/blogmain",
             { signal: abortController.signal }
