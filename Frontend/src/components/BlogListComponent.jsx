@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const BlogListComponent = (props) => {
   return (
-        <NavLink to={`/articles/${props.id}`} className='podcast-card'>
+        <NavLink to={`/articles/${props.id}`} className='podcast-card navlink'>
               <div className='card-img'>
                 <img src={props.src} alt="Title" />
               </div>

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const BlogSubDisplay = (props) => {
   return (
-      <NavLink to={`/articles/${props.id}`}  className='blog-element' id={props.id}>
+      <NavLink to={`/articles/${props.id}`}  className='blog-element navlink' id={props.id}>
         <img src={props.src} alt="Article Photo"/>
             <div className='blog-element-div' >
                 <h1>{props.title}</h1>

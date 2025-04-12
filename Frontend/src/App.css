@@ -7,6 +7,14 @@
   overflow-x: hidden;
 }
 
+.navlink {
+  cursor: pointer;
+}
+
+#nav-ul li {
+  cursor: pointer;
+}
+
 button, a {
   all: unset;
 }
