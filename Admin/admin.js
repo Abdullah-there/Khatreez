@@ -38,7 +38,6 @@ app.use(express.static("public"));
 app.use(passport.initialize());
 app.use(passport.session());
 
-db.connect();
 
 app.get("/", (req, res) => {
     res.render("Login.ejs");
