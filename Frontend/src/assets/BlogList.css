@@ -24,7 +24,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 20px 2px;
     width: 22vw;
     text-align: left;
     position: relative;
@@ -123,14 +123,21 @@
         width: 90vw;
         margin: auto;
     }  
+    .blog-contain {
+        height: 18vh;
+    }
+    .card-img img {
+        height: 90%;
+        object-fit: fill;
+    }
     .podcast-card  {
         display: flex;
         flex-direction: row-reverse;
         width: 90%;
     }
     .card-img {
-        width: 40vw;
-        height: auto;
+        width: 100px;
+        height: 17vh;
         margin-left: 3px;
     }
     .card-info {
