@@ -120,7 +120,7 @@
     .podcast-container {
         flex-direction: column;
         gap: 20px;
-        width: 90vw;
+        width: 100vw;
         margin: auto;
     }  
     .blog-contain {
@@ -136,12 +136,12 @@
         width: 90%;
     }
     .card-img {
-        width: 100px;
+        width: 115px;
         height: 17vh;
         margin-left: 3px;
     }
     .card-info {
-        width: 50vw;
+        width: 58vw;
         height: auto;
     }
     .podcast-card div h2{
