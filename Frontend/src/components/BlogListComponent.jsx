@@ -10,7 +10,7 @@ const BlogListComponent = (props) => {
               </div>
                 <div className='card-info'>
                   <h2>{props.title.substring(0,40)} ...</h2>
-                  <p>{props.text.substring(0,30)} ...</p>
+                  <p>{props.text.substring(0,80)} ...</p>
                   <p>Date : {props.date}</p>
                 </div>
         </NavLink>

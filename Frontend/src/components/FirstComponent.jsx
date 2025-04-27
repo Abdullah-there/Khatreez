@@ -46,7 +46,7 @@ function FirstComponent() {
       <div className="main-1 flex">
         <div className="left">
           <h1>{result.title}</h1>
-          <p>{result.article.substring(0, 100)} ...</p>
+          <p>{result.article.substring(0, 150)} ...</p>
           <div className="left-div flex">
             <p className="details-p">Date : {result.datetime}</p>
             <p className="details-p status">{result.status}</p>
