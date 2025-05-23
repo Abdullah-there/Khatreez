@@ -8,6 +8,10 @@
     font-weight: bolder;
 }
 
+.interval-div-h1:hover {
+    text-decoration: underline;
+}
+
 .interval-div p{
     font-size: large;
 }
