@@ -38,7 +38,19 @@ function FirstComponent() {
   }
 
   if (!result) {
-    return <p className="p-loading">Loading...</p>;
+    return <div className="main-1 flex">
+        <div className="left">
+          <h1>Loading ...</h1>
+          <p></p>
+          <div className="left-div flex">
+            <p className="details-p"></p>
+            <p className="details-p status"></p>
+          </div>
+        </div>
+        <div className="right">
+          <img src="#" alt="News" />
+        </div>
+      </div>;
   }
 
   return (
