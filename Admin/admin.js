@@ -7,10 +7,17 @@ import passport from "passport";
 import { Strategy } from "passport-local";
 import session from "express-session";
 import env from "dotenv";
+import path from "path";
+import { fileURLToPath } from 'url';
 
 const app = express();
 const saltRounds = 10;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 env.config();
+
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 
 const port = process.env.PORT || 5000;
 
@@ -22,6 +29,8 @@ const db = new pg.Pool({
   port: process.env.PGPORT,
   ssl: { rejectUnauthorized: false }
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
     session({
